@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "module": "system",
+    "outDir": "build",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outDir": "build",
     "sourceMap": false
   },
   "include": [
