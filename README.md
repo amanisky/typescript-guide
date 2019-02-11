@@ -32,5 +32,5 @@
   "rules": {
     "eol-last": false
   }
-},
+}
 ```
