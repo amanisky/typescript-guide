@@ -17,7 +17,7 @@ let octalLiteral: number = 0o744;
 let username: string = "bob";
 
 // 字符串，使用单引号（'）
-let password: string = 'abcdef';
+let password: string = 'hello';
 
 // 字符串，使用模版字符串，并且以 ${ expr } 这种形式嵌入表达式
 let sentence: string = `Hello, my name is ${ username }`;
