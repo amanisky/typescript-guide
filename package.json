@@ -1,0 +1,25 @@
+{
+  "name": "typescript-guide",
+  "version": "1.0.0",
+  "description": "typescript 学习指南",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --strictNullChecks"
+  },
+  "eslintConfig": {
+    "rules": {
+      "eol-last": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanisky/typescript-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanisky/typescript-guide/issues"
+  },
+  "homepage": "https://github.com/amanisky/typescript-guide#readme"
+}
