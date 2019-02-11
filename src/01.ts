@@ -22,7 +22,7 @@ let password: string = 'abcdef';
 // 字符串，使用模版字符串，并且以 ${ expr } 这种形式嵌入表达式
 let sentence: string = `Hello, my name is ${ username }`;
 
-// 数组
+// 数组，可以在元素类型后面接上 []，表示由此类型元素组成的一个数组
 let list: number[] = [1, 2, 3];
 
 // 数组泛型：Array<元素类型>
@@ -76,7 +76,9 @@ let unusable: void = undefined;
  */
 let u: undefined = undefined;
 let n: null = null;
-let num: number = null;
+
+// 当指定了--strictNullChecks 标记，会报错：Type 'null' is not assignable to type 'number'.
+// let num: number = null;
 
 /**
  * Never
