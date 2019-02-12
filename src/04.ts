@@ -55,3 +55,60 @@ let tom: Animal = new Horse("Tommy the Palomino");
 
 sam.move();
 tom.move(34);
+
+/**
+ * readonly 修饰符
+ */
+class Octopus {
+  readonly name: string;
+  readonly numberOfLegs: number = 8;
+  constructor (theName: string) {
+      this.name = theName;
+  }
+}
+
+let dad = new Octopus("Man with the 8 strong legs");
+
+/**
+ * 参数属性
+ * 可以方便地让我们在一个地方定义并初始化一个成员
+ * 通过给构造函数参数前面添加一个访问限定符来声明
+ */
+class People {
+  readonly numberOfLegs: number = 8;
+
+  // 把声明和赋值合并至一处
+  constructor (
+    readonly name: string,
+    public age: number
+  ) {
+
+  }
+}
+
+let people = new People("jack", 20);
+
+/**
+ * 存储器
+ */
+let passcode = "secret passcode";
+
+class Employee {
+  private _fullName: string;
+
+  get fullName(): string {
+    return this._fullName;
+  }
+
+  set fullName(newName: string) {
+    if (passcode && passcode == "secret passcode") {
+        this._fullName = newName;
+    }
+    else {
+        console.log("Error: Unauthorized update of employee!");
+    }
+  }
+}
+
+let employee = new Employee();
+employee.fullName = "Bob Smith";

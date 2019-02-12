@@ -7,7 +7,10 @@
 ```json
 {
   "compilerOptions": {
+    // 指定模块代码生成方式
     "module": "system",
+    // 指定目标版本；默认值：es3
+    "target": "es5",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
